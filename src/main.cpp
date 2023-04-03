@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
 
     pcl::PLYReader ply_reader;
     pcl::PCDReader pcd_reader;
-    if (pcd_reader.read(argv[1], cloud) < 0)
+    if (ply_reader.read(argv[1], cloud) < 0)
         return (false);
 
     print_info ("[done, ");
