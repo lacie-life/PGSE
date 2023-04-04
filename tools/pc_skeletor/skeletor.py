@@ -189,7 +189,7 @@ class Skeletonizer(object):
 
     def animate(self, init_rot: np.ndarray = np.eye(3),
                 steps: int = 360,
-                point_size: float = 1.0,
+                point_size: float = 5.0,
                 out: [str, None] = None):
         """
             Creates an animation of a point cloud. The point cloud is simply rotated by 360 Degree in multpile steps.
@@ -329,7 +329,7 @@ if __name__ == '__main__':
     downloader.download_tree_dataset()
 
     # Init tree skeletonizer
-    skeletor = Skeletonizer(point_cloud=downloader.file_path,
+    skeletor = Skeletonizer(point_cloud="/home/lacie/Github/PGSE/tools/test.ply",
                             down_sample=0.01,
                             debug=False)
 

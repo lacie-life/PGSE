@@ -12,7 +12,7 @@ from pc_skeletor.download import Dataset
 if __name__ == "__main__":
     print("Hello")
 
-    mesh = o3d.io.read_point_cloud("/home/lacie/Github/PGSE/tools/pc_skeletor/data/02_sceleton.ply")
+    mesh = o3d.io.read_triangle_mesh("/home/lacie/Github/PGSE/tools/pc_skeletor/data/02_sceleton.ply")
     o3d.visualization.draw_geometries([mesh])
 
 
