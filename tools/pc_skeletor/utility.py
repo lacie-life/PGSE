@@ -99,7 +99,7 @@ def points2pcd(points: np.ndarray):
     return pcd
 
 
-def load_pcd(filename):
+def load_pcd(filename, normalize=False):
     '''
     Wrapper to load open3D point Cloud.
 
