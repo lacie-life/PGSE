@@ -1,11 +1,12 @@
-robust_laplacian
 numpy
+robust_laplacian
 scipy
 matplotlib
-dgl
-torch
 open3d
 tqdm
 imageio
-mistree
 networkx
+charset-normalizer
+mistree==1.2.1
+pytest
+sniffio
