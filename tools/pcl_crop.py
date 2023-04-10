@@ -13,7 +13,7 @@ def crop_geometry():
     print("   or use ctrl + left click for polygon selection")
     print("4) Press 'C' to get a selected geometry and to save it")
     print("5) Press 'F' to switch to freeview mode")
-    pcd = o3d.io.read_point_cloud("/home/lacie/Github/Data/FaRoScan/Corn2.pcd")
+    pcd = o3d.io.read_point_cloud("/home/lacie/Github/PGSE/data/fused.ply")
     o3d.visualization.draw_geometries_with_editing([pcd])
 
 if __name__ == "__main__":
